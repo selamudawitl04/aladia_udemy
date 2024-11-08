@@ -1,0 +1,65 @@
+<template>
+  <nav class="flex items-center justify-between p-1 px-6 bg-white shadow-md">
+    <!-- Logo and Categories -->
+    <div class="flex items-center space-x-4">
+      <img
+        src="/images/logo-udemy.svg"
+        alt="Udemy Logo"
+        class="w-24 h-12 object-contain"
+      />
+      <span class="text-gray-700">Categories</span>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="flex-grow w-fit mx-4 hidden sm:flex">
+      <BaseInput
+        v-model="search"
+        placeholder="Search for anything"
+        class="!w-full !rounded-full !py-4 focus:!outline-none focus:!ring-0"
+        main-div="w-full"
+        icon-leading-class="pl-12"
+      >
+        <template #leading>
+          <div
+            class="pointer-events-none absolute inset-y-0 left-0 flex items-center px-4"
+          >
+            <Icon
+              name="material-symbols:search"
+              class="text-gray-700 text-2xl"
+            />
+          </div>
+        </template>
+      </BaseInput>
+    </div>
+
+    <div class="flex items-center space-x-4">
+      <a href="#" class="text-gray-700 hidden sm:block">Udemy Business</a>
+      <a href="#" class="text-gray-700 hidden sm:block">Teach on Udemy</a>
+
+      <Icon name="mdi:cart-outline" class="text-gray-700 text-2xl" />
+      <button class="text-gray-700">
+        <i class="fas fa-shopping-cart"></i>
+      </button>
+
+      <BaseButton name="Log in" />
+      <BaseButton
+        name="Sign up"
+        main-class="bg-gray-800 !text-white font-bold"
+      />
+
+      <button class="text-gray-700">
+        <i class="fas fa-globe"></i>
+      </button>
+    </div>
+  </nav>
+</template>
+
+<script>
+export default {
+  name: "Navbar",
+};
+</script>
+
+<style scoped>
+/* Additional styling if needed */
+</style>
