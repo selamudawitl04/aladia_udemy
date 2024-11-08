@@ -5,6 +5,9 @@ export default defineNuxtConfig({
     // pageTransition: { name: "page", mode: "out-in" },
     // layoutTransition: { name: "layout", mode: "out-in" },
   },
+  css: [
+    "~/assets/css/tailwind.css", // Path to your global CSS file
+  ],
   ssr: false,
   spaLoadingTemplate: false,
   devtools: { enabled: true },
@@ -19,6 +22,7 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "nuxt-lodash",
     "@pinia-plugin-persistedstate/nuxt",
+    "nuxt-rating",
   ],
   veeValidate: {
     // disable or enable auto imports
