@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex items-center justify-between p-1 px-6 bg-white shadow-md">
+  <nav class="flex items-center justify-between px-6 bg-white shadow-md">
     <!-- Logo and Categories -->
     <div class="flex items-center space-x-4">
       <img
@@ -15,7 +15,7 @@
       <BaseInput
         v-model="search"
         placeholder="Search for anything"
-        class="!w-full !rounded-full !py-4 focus:!outline-none focus:!ring-0"
+        class="!w-full !rounded-full !py-3 focus:!outline-none focus:!ring-0"
         main-div="w-full"
         icon-leading-class="pl-12"
       >
@@ -36,7 +36,13 @@
       <a href="#" class="text-gray-700 hidden sm:block">Udemy Business</a>
       <a href="#" class="text-gray-700 hidden sm:block">Teach on Udemy</a>
 
-      <Icon name="mdi:cart-outline" class="text-gray-700 text-2xl" />
+      <div class="relative">
+        <span
+          class="absolute -top-6 -right-4 w-8 h-8 rounded-full bg-[#A435F0] text-white text-center flex items-center justify-center"
+          >3
+        </span>
+        <Icon name="mdi:cart-outline" class="text-gray-700 text-2xl" />
+      </div>
       <button class="text-gray-700">
         <i class="fas fa-shopping-cart"></i>
       </button>
@@ -47,8 +53,8 @@
         main-class="bg-gray-800 !text-white font-bold"
       />
 
-      <button class="text-gray-700">
-        <i class="fas fa-globe"></i>
+      <button class="text-gray-700 border border-black p-3">
+        <Icon name="mage:globe" class="text-gray-700 text-2xl" />
       </button>
     </div>
   </nav>
@@ -57,6 +63,11 @@
 <script>
 export default {
   name: "Navbar",
+  data() {
+    return {
+      search: "",
+    };
+  },
 };
 </script>
 

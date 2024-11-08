@@ -3,7 +3,8 @@
     <Transition name="fade" mode="out-in">
       <Advertizement v-if="showAdvertizement" @close="closeAdvertizement" />
     </Transition>
-    <CourseHeader />
+    <Header />
+    <Course />
   </div>
 </template>
 <script setup>
