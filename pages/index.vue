@@ -5,6 +5,7 @@
     </Transition>
     <Header />
     <Course />
+    <Footer />
   </div>
 </template>
 <script setup>
