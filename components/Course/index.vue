@@ -10,6 +10,9 @@
         <CourseCompanies />
         <CourseContent />
         <CourseRequirement />
+        <CourseDescription />
+        <CourseStudentsBought />
+        <CourseFrequentlyBought />
       </div>
 
       <div v-if="courseStore.isPlanPopupOpened" class="relative">
