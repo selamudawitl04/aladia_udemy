@@ -1,7 +1,8 @@
 <template>
   <div class="bg-[#1C1D1F] w-full text-white">
+    <CourseHeaderNav />
     <div class="gap-8 max-w-6xl w-full mx-auto py-8 grid grid-cols-3">
-      <div class="flex flex-col gap-6 col-span-2">
+      <div class="flex flex-col gap-6 col-span-2 pr-8">
         <div class="text-[#C0C4FC] font-bold text-sm">
           Design <Icon name="mingcute:right-fill" class="text-xl" /> User
           Experience Design<Icon name="mingcute:right-fill" class="text-xl" />

@@ -25,10 +25,13 @@
           </div>
         </div>
 
-        <!-- -------Plan tab -->
-
-        <CourseHeaderPricingTab />
+        <CourseHeaderPricingTab v-if="!courseStore.isPlanPopupOpened" />
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+import { useCourseStore } from "~/stores/course";
+const courseStore = useCourseStore();
+</script>

@@ -1,5 +1,7 @@
 <template>
-  <nav class="flex items-center justify-between px-6 bg-white shadow-md">
+  <nav
+    class="flex items-center justify-between px-6 bg-white shadow-md z-40 relative"
+  >
     <!-- Logo and Categories -->
     <div class="flex items-center space-x-4">
       <img
@@ -9,7 +11,6 @@
       />
 
       <Category />
-      <!-- <span class="text-gray-700">Categories</span> -->
     </div>
 
     <!-- Search Bar -->
@@ -18,8 +19,10 @@
         v-model="search"
         placeholder="Search for anything"
         class="!w-full !rounded-full !py-3 focus:!outline-none focus:!ring-0"
+        placeholder-style="text-sm"
         main-div="w-full"
         icon-leading-class="pl-12"
+        name="search"
       >
         <template #leading>
           <div

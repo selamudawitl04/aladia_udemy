@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center bg-[#ECEB98] w-full py-5 px-5 relative">
+  <div class="flex justify-center bg-[#ECEB98] w-full py-5 px-5 relative z-50">
     <div>
       <div>
         <span class="font-bold text-sm">Sale ends today |</span> Invest skills.

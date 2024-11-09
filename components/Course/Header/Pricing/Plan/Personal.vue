@@ -79,6 +79,7 @@
           main-div=" !w-[70%] "
           class="!border-black !rounded-none h-full"
           placeholder-style="text-xs"
+          name="order"
         />
 
         <BaseButton
