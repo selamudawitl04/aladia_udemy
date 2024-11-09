@@ -40,7 +40,7 @@
           </div>
         </div>
       </div>
-      <div class="text-gray-600 flex flex-col gap-2">
+      <div class="text-gray-800 flex flex-col gap-2">
         <p>
           We are Creativity Unleashed, a group of professional creators
           dedicated to helping you unleash your creativity with our online

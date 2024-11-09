@@ -14,6 +14,8 @@
         <CourseStudentsBought />
         <CourseFrequentlyBought />
         <CourseInstructor />
+        <CourseRating />
+        <CourseMoreCourses />
       </div>
 
       <div v-if="courseStore.isPlanPopupOpened" class="relative">
