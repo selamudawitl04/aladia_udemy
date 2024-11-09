@@ -13,6 +13,7 @@
         <CourseDescription />
         <CourseStudentsBought />
         <CourseFrequentlyBought />
+        <CourseInstructor />
       </div>
 
       <div v-if="courseStore.isPlanPopupOpened" class="relative">

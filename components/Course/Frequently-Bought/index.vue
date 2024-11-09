@@ -1,7 +1,7 @@
 <template>
   <ul
     role="list"
-    class="overflow-hidden bg-white ring-1 ring-gray-300 px-4 sm:px-6 py-5"
+    class="overflow-hidden bg-white ring-1 ring-gray-300 px-4 sm:px-6 py-5 my-8"
   >
     <h1 class="text-xl font-extrabold text-gray-800 mb-5">
       Frequently bought together
@@ -59,9 +59,9 @@
     </div>
 
     <div class="flex justify-between mt-5">
-      <div class="flex items-center text-xl text-gray-600">
+      <div class="flex items-center text-xl text-black">
         Total :
-        <h1 class="text-3xl font-semibold text-gray-600">
+        <h1 class="text-2xl font-semibold text-black">
           {{
             people
               .reduce((acc, person) => acc + person.price, 0)
