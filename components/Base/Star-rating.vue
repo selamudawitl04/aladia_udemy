@@ -1,4 +1,3 @@
-<!-- components/StarRating.vue -->
 <template>
   <div class="star-rating" :class="{ 'preview-mode': previewOnly }">
     <div class="stars-container" @mouseleave="!previewOnly && resetTemp">

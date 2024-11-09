@@ -1,5 +1,4 @@
 <script setup>
-
 const emits = defineEmits(["update:modelValue", "confirm"]);
 const props = defineProps({
   modelValue: {
