@@ -8,6 +8,7 @@
         <CourseRelated />
         <CourseInclude />
         <CourseCompanies />
+        <CourseContent />
       </div>
 
       <div v-if="courseStore.isPlanPopupOpened" class="relative">
