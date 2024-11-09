@@ -7,7 +7,9 @@
         alt="Udemy Logo"
         class="w-24 h-12 object-contain"
       />
-      <span class="text-gray-700">Categories</span>
+
+      <Category />
+      <!-- <span class="text-gray-700">Categories</span> -->
     </div>
 
     <!-- Search Bar -->
