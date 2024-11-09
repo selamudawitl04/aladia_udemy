@@ -52,8 +52,13 @@
         <i class="fas fa-shopping-cart"></i>
       </button>
 
-      <BaseButton name="Log in" main-class="hover:bg-gray-300 !py-2" />
       <BaseButton
+        @click="$router.push('/auth/login')"
+        name="Log in"
+        main-class="hover:bg-gray-300 !py-2"
+      />
+      <BaseButton
+        @click="$router.push('/auth/signup')"
         name="Sign up"
         main-class="bg-gray-800 !text-white font-bold !py-2"
       />
