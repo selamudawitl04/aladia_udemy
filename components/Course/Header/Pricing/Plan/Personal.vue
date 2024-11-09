@@ -19,9 +19,9 @@
 
     <p class="py-1 text-xs text-center text-gray-500">Cancel anytime</p>
 
-    <!-- <div class="border-b border-gray-300 relative w-full">
-      <div class="absolute insert-x-0 top-0">or</div>
-    </div> -->
+    <div class="separator">
+      <span>or</span>
+    </div>
 
     <div class="">
       <div class="text-2xl font-semibold text-gray-900">
@@ -90,3 +90,27 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #969191; /* Text color */
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #dbd9d9; /* Solid line */
+}
+
+.separator::before {
+  margin-right: 10px;
+}
+
+.separator::after {
+  margin-left: 10px;
+}
+</style>

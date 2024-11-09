@@ -38,8 +38,8 @@
     </div>
 
     <div class="flex items-center space-x-4">
-      <a href="#" class="text-gray-700 hidden sm:block">Udemy Business</a>
-      <a href="#" class="text-gray-700 hidden sm:block">Teach on Udemy</a>
+      <HeaderPopupBusiness />
+      <HeaderPopupTeach />
 
       <div class="relative">
         <span
