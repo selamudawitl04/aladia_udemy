@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col gap-y-3">
-    <h1 class="text-2xl font-semibold text-gray-600 mb-5">Course Content</h1>
+  <div class="flex flex-col gap-y-3 my-6">
+    <h1 class="text-xl font-semibold mb-5">Course Content</h1>
     <div class="flex justify-between text-sm">
       <p class="flex items-center gap-x-1 text-gray-600">
         <span>13 section</span><Icon name="radix-icons:dot-filled" /><span>
@@ -27,7 +27,7 @@
               class="duration-300 text-xl"
               :class="[item.open ? '' : 'transform rotate-180']"
             />
-            <h3 class="text-base font-semibold text-gray-600 capitalize">
+            <h3 class="text-base font-semibold text-gray-800 capitalize">
               {{ item.title }}
             </h3>
           </div>
@@ -75,6 +75,7 @@
                 class="text-primary-600 text-sm hover:text-primary-900"
                 >Preview</a
               >
+
               <span class="text-sm text-gray-600 w-12">{{
                 lecture?.duration
               }}</span>

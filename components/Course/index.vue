@@ -9,6 +9,7 @@
         <CourseInclude />
         <CourseCompanies />
         <CourseContent />
+        <CourseRequirement />
       </div>
 
       <div v-if="courseStore.isPlanPopupOpened" class="relative">
@@ -32,3 +33,5 @@ function openPlanPopup({ direction }) {
   }
 }
 </script>
+
+requirements
