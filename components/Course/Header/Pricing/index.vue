@@ -12,10 +12,10 @@
 
           <!-- Gradient and Overlay Content -->
           <div
-            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-white/20 flex flex-col gap-8 items-center pb-4 justify-end z-[202]"
+            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-white/20 flex flex-col gap-8 items-center pb-4 justify-end z-10"
           >
             <div
-              class="rounded-full w-[6rem] h-[6rem] bg-white flex justify-center items-center shadow-lg"
+              class="rounded-full w-[4rem] h-[4rem] bg-white flex justify-center items-center shadow-lg"
             >
               <Icon name="mdi:play" class="text-5xl text-black" />
             </div>

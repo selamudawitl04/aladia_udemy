@@ -3,23 +3,23 @@
     <div class="grid grid-cols-2">
       <div
         class="py-4 text-gray-600 text-center font-bold cursor-pointer hover:text-black border-b border-gray-300"
-        :class="{ 'active-plan': isPersonalPlanActive }"
-        @click="isPersonalPlanActive = true"
+        :class="{ 'active-plan': courseStore.isPersonalPlanActive }"
+        @click="handleTogglePersonalPlan(true)"
       >
         Personal
       </div>
 
       <div
         class="py-4 text-gray-600 text-center font-bold cursor-pointer hover:text-black border-b border-gray-300"
-        :class="{ 'active-plan': !isPersonalPlanActive }"
-        @click="isPersonalPlanActive = false"
+        :class="{ 'active-plan': !courseStore.isPersonalPlanActive }"
+        @click="handleTogglePersonalPlan(false)"
       >
         Teams
       </div>
     </div>
 
     <Transition name="fade" mode="out-in">
-      <div v-if="isPersonalPlanActive">
+      <div v-if="courseStore.isPersonalPlanActive">
         <CourseHeaderPricingPlanPersonal />
       </div>
       <div v-else>
@@ -30,7 +30,12 @@
 </template>
 
 <script setup>
-const isPersonalPlanActive = ref(true);
+import { useCourseStore } from "~/stores/course";
+const courseStore = useCourseStore();
+
+function handleTogglePersonalPlan(value) {
+  courseStore.handleChangePlanTab(value);
+}
 </script>
 
 <style scoped>

@@ -52,13 +52,15 @@
         <i class="fas fa-shopping-cart"></i>
       </button>
 
-      <BaseButton name="Log in" />
+      <BaseButton name="Log in" main-class="hover:bg-gray-300 !py-2" />
       <BaseButton
         name="Sign up"
-        main-class="bg-gray-800 !text-white font-bold"
+        main-class="bg-gray-800 !text-white font-bold !py-2"
       />
 
-      <button class="text-gray-700 border border-black p-3">
+      <button
+        class="text-gray-700 border border-black px-3 py-2 hover:bg-gray-300"
+      >
         <Icon name="mage:globe" class="text-gray-700 text-2xl" />
       </button>
     </div>

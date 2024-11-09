@@ -5,6 +5,7 @@ export const useCourseStore = defineStore({
   state: () => {
     return {
       planPopupOpen: false,
+      personalTabActive: false,
     };
   },
 
@@ -12,11 +13,17 @@ export const useCourseStore = defineStore({
     isPlanPopupOpened() {
       return this.planPopupOpen;
     },
+    isPersonalPlanActive() {
+      return this.personalTabActive;
+    },
   },
 
   actions: {
     handleOpenPlanPopup(value) {
       this.planPopupOpen = value;
+    },
+    handleChangePlanTab(value) {
+      this.personalTabActive = value;
     },
   },
 });

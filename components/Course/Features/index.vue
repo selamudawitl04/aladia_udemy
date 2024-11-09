@@ -3,7 +3,7 @@
     <h2 class="text-2xl font-bold">What you'll learn</h2>
 
     <ul
-      class="grid grid-cols-2 gap-x-3 py-2"
+      class="grid grid-cols-2 gap-x-3 py-2 relative"
       :class="{
         ' ': !isShowMore,
       }"
@@ -21,6 +21,11 @@
         />
         <span class="text-gray-700">{{ feature }}</span>
       </li>
+
+      <div
+        class="bg-gradient-to-t from-white to-white/0 h-40 absolute bottom-0 w-full"
+        v-if="!isShowMore"
+      ></div>
     </ul>
 
     <button

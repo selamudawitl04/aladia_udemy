@@ -45,7 +45,7 @@
         </div>
 
         <!-- Popular Topics Display -->
-        <div v-if="activeSubCategory" class="w-[16rem] border-l pl-6 py-4">
+        <div v-if="activeSubCategory" class="w-[16rem] border-l px-4 py-4">
           <ul class="space-y-2 text-sm">
             <h3 class="font-bold">Popular Topics</h3>
 
